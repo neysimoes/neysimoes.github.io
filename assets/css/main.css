@@ -53,6 +53,198 @@ strong {
 a {
   word-wrap: break-word;
 }
+@-moz-keyframes blue-car {
+  from {
+    left: -90px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@-webkit-keyframes blue-car {
+  from {
+    left: -90px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@-o-keyframes blue-car {
+  from {
+    left: -90px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@keyframes blue-car {
+  from {
+    left: -90px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@-moz-keyframes blue-truck {
+  from {
+    left: -900px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@-webkit-keyframes blue-truck {
+  from {
+    left: -900px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@-o-keyframes blue-truck {
+  from {
+    left: -900px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@keyframes blue-truck {
+  from {
+    left: -900px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@-moz-keyframes green-van {
+  from {
+    right: -90px;
+  }
+  to {
+    right: 3000px;
+  }
+}
+@-webkit-keyframes green-van {
+  from {
+    right: -90px;
+  }
+  to {
+    right: 3000px;
+  }
+}
+@-o-keyframes green-van {
+  from {
+    right: -90px;
+  }
+  to {
+    right: 3000px;
+  }
+}
+@keyframes green-van {
+  from {
+    right: -90px;
+  }
+  to {
+    right: 3000px;
+  }
+}
+@-moz-keyframes brown-van {
+  from {
+    left: -600px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@-webkit-keyframes brown-van {
+  from {
+    left: -600px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@-o-keyframes brown-van {
+  from {
+    left: -600px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@keyframes brown-van {
+  from {
+    left: -600px;
+  }
+  to {
+    left: 3000px;
+  }
+}
+@-moz-keyframes black-car {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 2900px;
+  }
+}
+@-webkit-keyframes black-car {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 2900px;
+  }
+}
+@-o-keyframes black-car {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 2900px;
+  }
+}
+@keyframes black-car {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 2900px;
+  }
+}
+@-moz-keyframes black-truck {
+  from {
+    right: -4000px;
+  }
+  to {
+    right: 3000px;
+  }
+}
+@-webkit-keyframes black-truck {
+  from {
+    right: -4000px;
+  }
+  to {
+    right: 3000px;
+  }
+}
+@-o-keyframes black-truck {
+  from {
+    right: -4000px;
+  }
+  to {
+    right: 3000px;
+  }
+}
+@keyframes black-truck {
+  from {
+    right: -4000px;
+  }
+  to {
+    right: 3000px;
+  }
+}
 .sprite-image,
 .cloud-1,
 .cloud-2,
@@ -127,8 +319,8 @@ a {
 }
 .blue-truck {
   background-position: 0 -572px;
-  width: 598px;
-  height: 84px;
+  width: 84px;
+  height: 52px;
 }
 .sunburst {
   width: 100%;
@@ -151,11 +343,6 @@ a {
   margin: auto;
   width: 100%;
   height: 100%;
-  -webkit-animation: rotate1 15s linear infinite;
-  -moz-animation: rotate1 15s linear infinite;
-  -o-animation: rotate1 15s linear infinite;
-  -ms-animation: rotate1 15s linear infinite;
-  animation: rotate1 15s linear infinite;
 }
 .sunburst b {
   position: absolute;
@@ -234,70 +421,6 @@ a {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-@-moz-keyframes rotate1 {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(365deg);
-    -moz-transform: rotate(365deg);
-    -o-transform: rotate(365deg);
-    -ms-transform: rotate(365deg);
-    transform: rotate(365deg);
-  }
-}
-@-webkit-keyframes rotate1 {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(365deg);
-    -moz-transform: rotate(365deg);
-    -o-transform: rotate(365deg);
-    -ms-transform: rotate(365deg);
-    transform: rotate(365deg);
-  }
-}
-@-o-keyframes rotate1 {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(365deg);
-    -moz-transform: rotate(365deg);
-    -o-transform: rotate(365deg);
-    -ms-transform: rotate(365deg);
-    transform: rotate(365deg);
-  }
-}
-@keyframes rotate1 {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(365deg);
-    -moz-transform: rotate(365deg);
-    -o-transform: rotate(365deg);
-    -ms-transform: rotate(365deg);
-    transform: rotate(365deg);
-  }
-}
 .city {
   position: relative;
   height: 100%;
@@ -335,7 +458,7 @@ a {
   right: 0;
   left: 0;
   margin: auto;
-  background: #666;
+  background: #888;
 }
 .blue-car {
   top: -25px;
@@ -347,115 +470,43 @@ a {
 }
 .green-van {
   top: -10px;
-  -webkit-animation: green-van 20s linear infinite;
-  -moz-animation: green-van 20s linear infinite;
-  -o-animation: green-van 20s linear infinite;
-  -ms-animation: green-van 20s linear infinite;
-  animation: green-van 20s linear infinite;
+  -webkit-animation: green-van 17s linear infinite;
+  -moz-animation: green-van 17s linear infinite;
+  -o-animation: green-van 17s linear infinite;
+  -ms-animation: green-van 17s linear infinite;
+  animation: green-van 17s linear infinite;
 }
 .brown-van {
-  top: -10px;
+  top: -25px;
   -webkit-animation: brown-van 20s linear infinite;
   -moz-animation: brown-van 20s linear infinite;
   -o-animation: brown-van 20s linear infinite;
   -ms-animation: brown-van 20s linear infinite;
   animation: brown-van 20s linear infinite;
 }
-@-moz-keyframes blue-car {
-  from {
-    left: -90px;
-  }
-  to {
-    left: 3000px;
-  }
+.black-car {
+  top: -10px;
+  -webkit-animation: black-car 20s linear infinite;
+  -moz-animation: black-car 20s linear infinite;
+  -o-animation: black-car 20s linear infinite;
+  -ms-animation: black-car 20s linear infinite;
+  animation: black-car 20s linear infinite;
 }
-@-webkit-keyframes blue-car {
-  from {
-    left: -90px;
-  }
-  to {
-    left: 3000px;
-  }
+.black-truck {
+  top: -10px;
+  -webkit-animation: black-car 30s linear infinite;
+  -moz-animation: black-car 30s linear infinite;
+  -o-animation: black-car 30s linear infinite;
+  -ms-animation: black-car 30s linear infinite;
+  animation: black-car 30s linear infinite;
 }
-@-o-keyframes blue-car {
-  from {
-    left: -90px;
-  }
-  to {
-    left: 3000px;
-  }
-}
-@keyframes blue-car {
-  from {
-    left: -90px;
-  }
-  to {
-    left: 3000px;
-  }
-}
-@-moz-keyframes green-van {
-  from {
-    right: -90px;
-  }
-  to {
-    right: 3000px;
-  }
-}
-@-webkit-keyframes green-van {
-  from {
-    right: -90px;
-  }
-  to {
-    right: 3000px;
-  }
-}
-@-o-keyframes green-van {
-  from {
-    right: -90px;
-  }
-  to {
-    right: 3000px;
-  }
-}
-@keyframes green-van {
-  from {
-    right: -90px;
-  }
-  to {
-    right: 3000px;
-  }
-}
-@-moz-keyframes brown-van {
-  from {
-    right: -600px;
-  }
-  to {
-    right: 3000px;
-  }
-}
-@-webkit-keyframes brown-van {
-  from {
-    right: -600px;
-  }
-  to {
-    right: 3000px;
-  }
-}
-@-o-keyframes brown-van {
-  from {
-    right: -600px;
-  }
-  to {
-    right: 3000px;
-  }
-}
-@keyframes brown-van {
-  from {
-    right: -600px;
-  }
-  to {
-    right: 3000px;
-  }
+.blue-truck {
+  top: -36px;
+  -webkit-animation: blue-truck 25s linear infinite;
+  -moz-animation: blue-truck 25s linear infinite;
+  -o-animation: blue-truck 25s linear infinite;
+  -ms-animation: blue-truck 25s linear infinite;
+  animation: blue-truck 25s linear infinite;
 }
 .title {
   position: absolute;
