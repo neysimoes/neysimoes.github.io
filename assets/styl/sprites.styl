@@ -1,0 +1,43 @@
+.sprite-image
+	background url(../img/sprite.png) no-repeat
+	display block
+	position absolute
+
+sprite(t, w, h)
+	background-position 0 t
+	width w
+	height h
+	@extend .sprite-image
+
+.cloud-1
+	sprite(0, 160px, 69px)
+
+.cloud-2
+	sprite(-70px, 71px, 46px)
+
+.cloud-3
+	sprite(-117px, 58px, 38px)
+
+.cloud-4
+	sprite(-156px, 45px, 29px)
+
+.balloon
+	sprite(-185px, 83px, 116px)
+
+.helicopter
+	sprite(-302px,85px, 46px)
+
+.brown-van
+	sprite(-349px, 86px, 42px)
+.green-van
+	sprite(-529px, 86px, 42px)
+
+.blue-car
+	sprite(-392px, 85px, 45px)
+.black-car
+	sprite(-483px, 85px, 45px)
+
+.black-truck
+	sprite(-438px, 84px, 44px)
+.blue-truck
+	sprite(-572px, 598px, 84px)

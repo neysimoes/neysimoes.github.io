@@ -1,0 +1,84 @@
+// Reference:
+// http://codepen.io/akashnimare/pen/sjmbB
+
+@import 'nib'
+
+// section
+// 	position: absolute
+// 	height: 100%
+// 	width: 100%
+
+.sunburst
+	width: 100%
+	height: 100%
+	margin: auto
+	overflow: hidden
+	background: #93dfdc
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+  
+
+.sunburst .outer
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	margin: auto
+	width: 100%
+	height: 100%
+	animation: rotate1 15s linear infinite
+
+.sunburst b
+	position absolute
+	left -325px
+	right 0
+	top 0
+	bottom 0
+	display: block
+	width: 0
+	height: 0
+	border-width: 90px 1300px
+	margin: auto
+	border-color: transparent #84dbd7
+	border-style: solid
+
+.sunburst b
+	&:nth-child(1)
+		transform:rotate(20deg)
+
+	&:nth-child(2)
+		transform:rotate(40deg)
+
+	&:nth-child(3)
+		transform:rotate(60deg)
+
+	&:nth-child(4)
+		transform:rotate(80deg)
+
+	&:nth-child(5)
+		transform:rotate(100deg)
+
+	&:nth-child(6)
+		transform:rotate(120deg)
+
+	&:nth-child(7)
+		transform:rotate(140deg)
+
+	&:nth-child(8)
+		transform:rotate(160deg)
+
+	&:nth-child(9)
+		transform:rotate(180deg)
+
+@keyframes rotate1 {
+	from { 
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(365deg)
+	}
+}
