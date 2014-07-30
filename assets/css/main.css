@@ -326,35 +326,20 @@ a {
   width: 100%;
   height: 100%;
   margin: auto;
-  overflow: hidden;
   background: #93dfdc;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-.sunburst .outer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
+  position: relative;
 }
 .sunburst b {
   position: absolute;
-  left: -325px;
+  left: -18%;
   right: 0;
   top: 0;
   bottom: 0;
-  display: block;
-  width: 0;
-  height: 0;
-  border-width: 90px 1300px;
   margin: auto;
+  display: block;
+  width: 1px;
+  height: 1px;
+  border-width: 120px 1300px;
   border-color: transparent #84dbd7;
   border-style: solid;
 }
@@ -420,6 +405,70 @@ a {
   -o-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+@-moz-keyframes rotate1 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+}
+@-webkit-keyframes rotate1 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+}
+@-o-keyframes rotate1 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+}
+@keyframes rotate1 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
 }
 .city {
   position: relative;
@@ -523,11 +572,11 @@ a {
 .title h1 {
   font-size: 10em;
   font-weight: 900;
-  text-shadow: 1px 4px 6px #666, 1px 4px 6px #999;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 1px 4px 0px #67a, 1px 2px 0px #953;
 }
 .title h2 {
-  color: rgba(235,205,99,0.8);
+  color: #fff;
   font-size: 2.84em;
   font-weight: 600;
-  text-shadow: 1px 4px 6px #666, 1px 4px 6px #999;
 }

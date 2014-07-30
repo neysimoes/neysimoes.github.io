@@ -12,39 +12,35 @@
 	width: 100%
 	height: 100%
 	margin: auto
-	overflow: hidden
+	// overflow: hidden
 	background: #93dfdc
-	position: absolute
-	left: 0
-	right: 0
-	top: 0
-	bottom: 0
+	position: relative
+	// left: 0
+	// right: 0
+	// top: 0
+	// bottom: 0
   
 
 .sunburst .outer
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	margin: auto
-	width: 100%
-	height: 100%
-	// animation: rotate1 15s linear infinite
+	// margin: auto
+	// width: 100%
+	// height: 100%
+	// animation: rotate1 5s linear infinite
 
 .sunburst b
 	position absolute
-	left -325px
+	left -18%
 	right 0
 	top 0
 	bottom 0
-	display: block
-	width: 0
-	height: 0
-	border-width: 90px 1300px
 	margin: auto
+	display: block
+	width: 1px
+	height: 1px
+	border-width: 120px 1300px
 	border-color: transparent #84dbd7
 	border-style: solid
+	// background: black
 
 .sunburst b
 	&:nth-child(1)
@@ -74,11 +70,11 @@
 	&:nth-child(9)
 		transform:rotate(180deg)
 
-// @keyframes rotate1 {
-// 	from { 
-// 		transform: rotate(0deg)
-// 	}
-// 	to {
-// 		transform: rotate(365deg)
-// 	}
-// }
+@keyframes rotate1 {
+	from { 
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(20deg)
+	}
+}
