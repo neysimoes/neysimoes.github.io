@@ -53,196 +53,164 @@ strong {
 a {
   word-wrap: break-word;
 }
-@-moz-keyframes blue-car {
+@-moz-keyframes cloud-1 {
   from {
-    left: -90px;
+    left: 10%;
   }
   to {
-    left: 3000px;
+    left: 80%;
   }
 }
-@-webkit-keyframes blue-car {
+@-webkit-keyframes cloud-1 {
   from {
-    left: -90px;
+    left: 10%;
   }
   to {
-    left: 3000px;
+    left: 80%;
   }
 }
-@-o-keyframes blue-car {
+@-o-keyframes cloud-1 {
   from {
-    left: -90px;
+    left: 10%;
   }
   to {
-    left: 3000px;
+    left: 80%;
   }
 }
-@keyframes blue-car {
+@keyframes cloud-1 {
   from {
-    left: -90px;
+    left: 10%;
   }
   to {
-    left: 3000px;
+    left: 80%;
   }
 }
-@-moz-keyframes blue-truck {
+@-moz-keyframes cloud-4-one {
   from {
-    left: -900px;
+    left: 30%;
   }
   to {
-    left: 3000px;
+    left: 90%;
   }
 }
-@-webkit-keyframes blue-truck {
+@-webkit-keyframes cloud-4-one {
   from {
-    left: -900px;
+    left: 30%;
   }
   to {
-    left: 3000px;
+    left: 90%;
   }
 }
-@-o-keyframes blue-truck {
+@-o-keyframes cloud-4-one {
   from {
-    left: -900px;
+    left: 30%;
   }
   to {
-    left: 3000px;
+    left: 90%;
   }
 }
-@keyframes blue-truck {
+@keyframes cloud-4-one {
   from {
-    left: -900px;
+    left: 30%;
   }
   to {
-    left: 3000px;
+    left: 90%;
   }
 }
-@-moz-keyframes green-van {
+@-moz-keyframes cloud-4-two {
   from {
-    right: -90px;
+    left: 25%;
   }
   to {
-    right: 3000px;
+    left: 85%;
   }
 }
-@-webkit-keyframes green-van {
+@-webkit-keyframes cloud-4-two {
   from {
-    right: -90px;
+    left: 25%;
   }
   to {
-    right: 3000px;
+    left: 85%;
   }
 }
-@-o-keyframes green-van {
+@-o-keyframes cloud-4-two {
   from {
-    right: -90px;
+    left: 25%;
   }
   to {
-    right: 3000px;
+    left: 85%;
   }
 }
-@keyframes green-van {
+@keyframes cloud-4-two {
   from {
-    right: -90px;
+    left: 25%;
   }
   to {
-    right: 3000px;
+    left: 85%;
   }
 }
-@-moz-keyframes brown-van {
+@-moz-keyframes right-road {
   from {
-    left: -600px;
+    left: -10%;
   }
   to {
-    left: 3000px;
+    left: 110%;
   }
 }
-@-webkit-keyframes brown-van {
+@-webkit-keyframes right-road {
   from {
-    left: -600px;
+    left: -10%;
   }
   to {
-    left: 3000px;
+    left: 110%;
   }
 }
-@-o-keyframes brown-van {
+@-o-keyframes right-road {
   from {
-    left: -600px;
+    left: -10%;
   }
   to {
-    left: 3000px;
+    left: 110%;
   }
 }
-@keyframes brown-van {
+@keyframes right-road {
   from {
-    left: -600px;
+    left: -10%;
   }
   to {
-    left: 3000px;
+    left: 110%;
   }
 }
-@-moz-keyframes black-car {
+@-moz-keyframes left-road {
   from {
-    right: -300px;
+    right: -10%;
   }
   to {
-    right: 2900px;
+    right: 110%;
   }
 }
-@-webkit-keyframes black-car {
+@-webkit-keyframes left-road {
   from {
-    right: -300px;
+    right: -10%;
   }
   to {
-    right: 2900px;
+    right: 110%;
   }
 }
-@-o-keyframes black-car {
+@-o-keyframes left-road {
   from {
-    right: -300px;
+    right: -10%;
   }
   to {
-    right: 2900px;
+    right: 110%;
   }
 }
-@keyframes black-car {
+@keyframes left-road {
   from {
-    right: -300px;
+    right: -10%;
   }
   to {
-    right: 2900px;
-  }
-}
-@-moz-keyframes black-truck {
-  from {
-    right: -4000px;
-  }
-  to {
-    right: 3000px;
-  }
-}
-@-webkit-keyframes black-truck {
-  from {
-    right: -4000px;
-  }
-  to {
-    right: 3000px;
-  }
-}
-@-o-keyframes black-truck {
-  from {
-    right: -4000px;
-  }
-  to {
-    right: 3000px;
-  }
-}
-@keyframes black-truck {
-  from {
-    right: -4000px;
-  }
-  to {
-    right: 3000px;
+    right: 110%;
   }
 }
 .sprite-image,
@@ -331,10 +299,6 @@ a {
 }
 .sunburst b {
   position: absolute;
-  left: -18%;
-  right: 0;
-  top: 0;
-  bottom: 0;
   margin: auto;
   display: block;
   width: 1px;
@@ -342,6 +306,7 @@ a {
   border-width: 120px 1300px;
   border-color: transparent #84dbd7;
   border-style: solid;
+  overflow: hidden;
 }
 .sunburst b:nth-child(1) {
   -webkit-transform: rotate(20deg);
@@ -349,6 +314,7 @@ a {
   -o-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   transform: rotate(20deg);
+  z-index: 1;
 }
 .sunburst b:nth-child(2) {
   -webkit-transform: rotate(40deg);
@@ -356,6 +322,7 @@ a {
   -o-transform: rotate(40deg);
   -ms-transform: rotate(40deg);
   transform: rotate(40deg);
+  z-index: 2;
 }
 .sunburst b:nth-child(3) {
   -webkit-transform: rotate(60deg);
@@ -363,6 +330,7 @@ a {
   -o-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
   transform: rotate(60deg);
+  z-index: 3;
 }
 .sunburst b:nth-child(4) {
   -webkit-transform: rotate(80deg);
@@ -370,6 +338,7 @@ a {
   -o-transform: rotate(80deg);
   -ms-transform: rotate(80deg);
   transform: rotate(80deg);
+  z-index: 4;
 }
 .sunburst b:nth-child(5) {
   -webkit-transform: rotate(100deg);
@@ -377,6 +346,7 @@ a {
   -o-transform: rotate(100deg);
   -ms-transform: rotate(100deg);
   transform: rotate(100deg);
+  z-index: 5;
 }
 .sunburst b:nth-child(6) {
   -webkit-transform: rotate(120deg);
@@ -384,6 +354,7 @@ a {
   -o-transform: rotate(120deg);
   -ms-transform: rotate(120deg);
   transform: rotate(120deg);
+  z-index: 6;
 }
 .sunburst b:nth-child(7) {
   -webkit-transform: rotate(140deg);
@@ -391,6 +362,7 @@ a {
   -o-transform: rotate(140deg);
   -ms-transform: rotate(140deg);
   transform: rotate(140deg);
+  z-index: 7;
 }
 .sunburst b:nth-child(8) {
   -webkit-transform: rotate(160deg);
@@ -398,6 +370,7 @@ a {
   -o-transform: rotate(160deg);
   -ms-transform: rotate(160deg);
   transform: rotate(160deg);
+  z-index: 8;
 }
 .sunburst b:nth-child(9) {
   -webkit-transform: rotate(180deg);
@@ -405,6 +378,7 @@ a {
   -o-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+  z-index: 9;
 }
 @-moz-keyframes rotate1 {
   from {
@@ -475,6 +449,7 @@ a {
   height: 100%;
   min-height: 100%;
   overflow: hidden;
+  background: #baf4f2;
 }
 .sunburst {
   z-index: 0;
@@ -511,55 +486,92 @@ a {
 }
 .blue-car {
   top: -25px;
-  -webkit-animation: blue-car 15s linear infinite;
-  -moz-animation: blue-car 15s linear infinite;
-  -o-animation: blue-car 15s linear infinite;
-  -ms-animation: blue-car 15s linear infinite;
-  animation: blue-car 15s linear infinite;
-}
-.green-van {
-  top: -10px;
-  -webkit-animation: green-van 17s linear infinite;
-  -moz-animation: green-van 17s linear infinite;
-  -o-animation: green-van 17s linear infinite;
-  -ms-animation: green-van 17s linear infinite;
-  animation: green-van 17s linear infinite;
-}
-.brown-van {
-  top: -25px;
-  -webkit-animation: brown-van 20s linear infinite;
-  -moz-animation: brown-van 20s linear infinite;
-  -o-animation: brown-van 20s linear infinite;
-  -ms-animation: brown-van 20s linear infinite;
-  animation: brown-van 20s linear infinite;
-}
-.black-car {
-  top: -10px;
-  -webkit-animation: black-car 20s linear infinite;
-  -moz-animation: black-car 20s linear infinite;
-  -o-animation: black-car 20s linear infinite;
-  -ms-animation: black-car 20s linear infinite;
-  animation: black-car 20s linear infinite;
-}
-.black-truck {
-  top: -10px;
-  -webkit-animation: black-car 30s linear infinite;
-  -moz-animation: black-car 30s linear infinite;
-  -o-animation: black-car 30s linear infinite;
-  -ms-animation: black-car 30s linear infinite;
-  animation: black-car 30s linear infinite;
+  left: -10%;
+  -webkit-animation: right-road 20s linear 0s infinite;
+  -moz-animation: right-road 20s linear 0s infinite;
+  -o-animation: right-road 20s linear 0s infinite;
+  -ms-animation: right-road 20s linear 0s infinite;
+  animation: right-road 20s linear 0s infinite;
 }
 .blue-truck {
   top: -36px;
-  -webkit-animation: blue-truck 25s linear infinite;
-  -moz-animation: blue-truck 25s linear infinite;
-  -o-animation: blue-truck 25s linear infinite;
-  -ms-animation: blue-truck 25s linear infinite;
-  animation: blue-truck 25s linear infinite;
+  left: -10%;
+  -webkit-animation: right-road 20s linear 3s infinite;
+  -moz-animation: right-road 20s linear 3s infinite;
+  -o-animation: right-road 20s linear 3s infinite;
+  -ms-animation: right-road 20s linear 3s infinite;
+  animation: right-road 20s linear 3s infinite;
+}
+.brown-van {
+  top: -25px;
+  left: -10%;
+  -webkit-animation: right-road 20s linear 8s infinite;
+  -moz-animation: right-road 20s linear 8s infinite;
+  -o-animation: right-road 20s linear 8s infinite;
+  -ms-animation: right-road 20s linear 8s infinite;
+  animation: right-road 20s linear 8s infinite;
+}
+.green-van {
+  top: -10px;
+  right: -10%;
+  -webkit-animation: left-road 20s linear 0s infinite;
+  -moz-animation: left-road 20s linear 0s infinite;
+  -o-animation: left-road 20s linear 0s infinite;
+  -ms-animation: left-road 20s linear 0s infinite;
+  animation: left-road 20s linear 0s infinite;
+}
+.black-car {
+  top: -10px;
+  right: -10%;
+  -webkit-animation: left-road 20s linear 5s infinite;
+  -moz-animation: left-road 20s linear 5s infinite;
+  -o-animation: left-road 20s linear 5s infinite;
+  -ms-animation: left-road 20s linear 5s infinite;
+  animation: left-road 20s linear 5s infinite;
+}
+.black-truck {
+  top: -10px;
+  right: -10%;
+  -webkit-animation: left-road 20s linear 9s infinite;
+  -moz-animation: left-road 20s linear 9s infinite;
+  -o-animation: left-road 20s linear 9s infinite;
+  -ms-animation: left-road 20s linear 9s infinite;
+  animation: left-road 20s linear 9s infinite;
+}
+.sky-far .cloud-2 {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  top: 14%;
+  -webkit-animation: cloud-1 100s linear infinite;
+  -moz-animation: cloud-1 100s linear infinite;
+  -o-animation: cloud-1 100s linear infinite;
+  -ms-animation: cloud-1 100s linear infinite;
+  animation: cloud-1 100s linear infinite;
+}
+.sky-near .cloud-4 {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.sky-near .cloud-4.one {
+  top: 10%;
+  -webkit-animation: cloud-4-one 100s linear infinite;
+  -moz-animation: cloud-4-one 100s linear infinite;
+  -o-animation: cloud-4-one 100s linear infinite;
+  -ms-animation: cloud-4-one 100s linear infinite;
+  animation: cloud-4-one 100s linear infinite;
+}
+.sky-near .cloud-4.two {
+  top: 15%;
+  -webkit-animation: cloud-4-two 100s linear infinite;
+  -moz-animation: cloud-4-two 100s linear infinite;
+  -o-animation: cloud-4-two 100s linear infinite;
+  -ms-animation: cloud-4-two 100s linear infinite;
+  animation: cloud-4-two 100s linear infinite;
 }
 .title {
-  position: absolute;
-  z-index: 999;
+  position: fixed;
   top: 10%;
   left: 0;
   right: 0;
@@ -570,13 +582,24 @@ a {
   text-align: center;
 }
 .title h1 {
-  font-size: 10em;
+  font-size: 6em;
   font-weight: 900;
   color: rgba(255,255,255,0.8);
   text-shadow: 1px 4px 0px #67a, 1px 2px 0px #953;
 }
 .title h2 {
   color: #fff;
-  font-size: 2.84em;
+  font-size: 1.7em;
   font-weight: 600;
+}
+.sky-far,
+.sky-near {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
 }

@@ -29,10 +29,10 @@
 
 .sunburst b
 	position absolute
-	left -18%
-	right 0
-	top 0
-	bottom 0
+	// left 0
+	// right 0
+	// top 0
+	// bottom 0
 	margin: auto
 	display: block
 	width: 1px
@@ -41,34 +41,44 @@
 	border-color: transparent #84dbd7
 	border-style: solid
 	// background: black
+	overflow hidden
 
 .sunburst b
 	&:nth-child(1)
 		transform:rotate(20deg)
+		z-index 1
 
 	&:nth-child(2)
 		transform:rotate(40deg)
+		z-index 2
 
 	&:nth-child(3)
 		transform:rotate(60deg)
+		z-index 3
 
 	&:nth-child(4)
 		transform:rotate(80deg)
+		z-index 4
 
 	&:nth-child(5)
 		transform:rotate(100deg)
+		z-index 5
 
 	&:nth-child(6)
 		transform:rotate(120deg)
+		z-index 6
 
 	&:nth-child(7)
 		transform:rotate(140deg)
+		z-index 7
 
 	&:nth-child(8)
 		transform:rotate(160deg)
+		z-index 8
 
 	&:nth-child(9)
 		transform:rotate(180deg)
+		z-index 9
 
 @keyframes rotate1 {
 	from { 
