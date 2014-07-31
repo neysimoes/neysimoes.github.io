@@ -812,6 +812,7 @@ a {
   color: #fff;
   font-size: 1.7em;
   font-weight: 600;
+  text-shadow: 2px 2px 0px #999;
 }
 .sky-far,
 .sky-near {
