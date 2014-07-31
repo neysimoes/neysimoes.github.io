@@ -53,36 +53,196 @@ strong {
 a {
   word-wrap: break-word;
 }
-@-moz-keyframes cloud-1 {
+@-moz-keyframes cloud-1-one {
   from {
-    left: 10%;
+    left: 40%;
   }
   to {
-    left: 80%;
+    left: 110%;
   }
 }
-@-webkit-keyframes cloud-1 {
+@-webkit-keyframes cloud-1-one {
   from {
-    left: 10%;
+    left: 40%;
   }
   to {
-    left: 80%;
+    left: 110%;
   }
 }
-@-o-keyframes cloud-1 {
+@-o-keyframes cloud-1-one {
   from {
-    left: 10%;
+    left: 40%;
   }
   to {
-    left: 80%;
+    left: 110%;
   }
 }
-@keyframes cloud-1 {
+@keyframes cloud-1-one {
   from {
-    left: 10%;
+    left: 40%;
   }
   to {
-    left: 80%;
+    left: 110%;
+  }
+}
+@-moz-keyframes cloud-1-two {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 90%;
+  }
+}
+@-webkit-keyframes cloud-1-two {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 90%;
+  }
+}
+@-o-keyframes cloud-1-two {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 90%;
+  }
+}
+@keyframes cloud-1-two {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 90%;
+  }
+}
+@-moz-keyframes cloud-1-three {
+  from {
+    left: 5%;
+  }
+  to {
+    left: 75%;
+  }
+}
+@-webkit-keyframes cloud-1-three {
+  from {
+    left: 5%;
+  }
+  to {
+    left: 75%;
+  }
+}
+@-o-keyframes cloud-1-three {
+  from {
+    left: 5%;
+  }
+  to {
+    left: 75%;
+  }
+}
+@keyframes cloud-1-three {
+  from {
+    left: 5%;
+  }
+  to {
+    left: 75%;
+  }
+}
+@-moz-keyframes cloud-1-four {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes cloud-1-four {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-o-keyframes cloud-1-four {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes cloud-1-four {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-moz-keyframes cloud-1-five {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 120%;
+  }
+}
+@-webkit-keyframes cloud-1-five {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 120%;
+  }
+}
+@-o-keyframes cloud-1-five {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 120%;
+  }
+}
+@keyframes cloud-1-five {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 120%;
+  }
+}
+@-moz-keyframes cloud-1-six {
+  from {
+    left: 70%;
+  }
+  to {
+    left: 140%;
+  }
+}
+@-webkit-keyframes cloud-1-six {
+  from {
+    left: 70%;
+  }
+  to {
+    left: 140%;
+  }
+}
+@-o-keyframes cloud-1-six {
+  from {
+    left: 70%;
+  }
+  to {
+    left: 140%;
+  }
+}
+@keyframes cloud-1-six {
+  from {
+    left: 70%;
+  }
+  to {
+    left: 140%;
   }
 }
 @-moz-keyframes cloud-4-one {
@@ -538,37 +698,98 @@ a {
   -ms-animation: left-road 20s linear 9s infinite;
   animation: left-road 20s linear 9s infinite;
 }
-.sky-far .cloud-2 {
+.cloud {
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
-  top: 14%;
-  -webkit-animation: cloud-1 100s linear infinite;
-  -moz-animation: cloud-1 100s linear infinite;
-  -o-animation: cloud-1 100s linear infinite;
-  -ms-animation: cloud-1 100s linear infinite;
-  animation: cloud-1 100s linear infinite;
 }
-.sky-near .cloud-4 {
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
+.sky-far .cloud-1.one {
+  top: 10%;
+  -webkit-animation: cloud-1-one 100s linear infinite alternate;
+  -moz-animation: cloud-1-one 100s linear infinite alternate;
+  -o-animation: cloud-1-one 100s linear infinite alternate;
+  -ms-animation: cloud-1-one 100s linear infinite alternate;
+  animation: cloud-1-one 100s linear infinite alternate;
+}
+.sky-far .cloud-1.two {
+  top: 2%;
+  -webkit-animation: cloud-1-two 100s linear infinite alternate;
+  -moz-animation: cloud-1-two 100s linear infinite alternate;
+  -o-animation: cloud-1-two 100s linear infinite alternate;
+  -ms-animation: cloud-1-two 100s linear infinite alternate;
+  animation: cloud-1-two 100s linear infinite alternate;
+}
+.sky-far .cloud-1.three {
+  top: 30%;
+  -webkit-animation: cloud-1-three 100s linear infinite alternate;
+  -moz-animation: cloud-1-three 100s linear infinite alternate;
+  -o-animation: cloud-1-three 100s linear infinite alternate;
+  -ms-animation: cloud-1-three 100s linear infinite alternate;
+  animation: cloud-1-three 100s linear infinite alternate;
+}
+.sky-far .cloud-1.four {
+  top: 35%;
+  -webkit-animation: cloud-1-four 100s linear infinite alternate;
+  -moz-animation: cloud-1-four 100s linear infinite alternate;
+  -o-animation: cloud-1-four 100s linear infinite alternate;
+  -ms-animation: cloud-1-four 100s linear infinite alternate;
+  animation: cloud-1-four 100s linear infinite alternate;
+}
+.sky-far .cloud-1.five {
+  top: 40%;
+  -webkit-animation: cloud-1-five 100s linear infinite alternate;
+  -moz-animation: cloud-1-five 100s linear infinite alternate;
+  -o-animation: cloud-1-five 100s linear infinite alternate;
+  -ms-animation: cloud-1-five 100s linear infinite alternate;
+  animation: cloud-1-five 100s linear infinite alternate;
+}
+.sky-far .cloud-1.six {
+  top: 60%;
+  -webkit-animation: cloud-1-six 100s linear infinite alternate;
+  -moz-animation: cloud-1-six 100s linear infinite alternate;
+  -o-animation: cloud-1-six 100s linear infinite alternate;
+  -ms-animation: cloud-1-six 100s linear infinite alternate;
+  animation: cloud-1-six 100s linear infinite alternate;
+}
+.sky-far .cloud-1.seven {
+  top: 70%;
+  -webkit-animation: cloud-1-four 100s linear infinite alternate;
+  -moz-animation: cloud-1-four 100s linear infinite alternate;
+  -o-animation: cloud-1-four 100s linear infinite alternate;
+  -ms-animation: cloud-1-four 100s linear infinite alternate;
+  animation: cloud-1-four 100s linear infinite alternate;
+}
+.sky-far .cloud-3 {
+  top: 30%;
+  -webkit-animation: cloud-4-one 100s linear infinite alternate;
+  -moz-animation: cloud-4-one 100s linear infinite alternate;
+  -o-animation: cloud-4-one 100s linear infinite alternate;
+  -ms-animation: cloud-4-one 100s linear infinite alternate;
+  animation: cloud-4-one 100s linear infinite alternate;
+}
+.sky-far .cloud-2 {
+  top: 14%;
+  -webkit-animation: cloud-4-one 100s linear infinite alternate;
+  -moz-animation: cloud-4-one 100s linear infinite alternate;
+  -o-animation: cloud-4-one 100s linear infinite alternate;
+  -ms-animation: cloud-4-one 100s linear infinite alternate;
+  animation: cloud-4-one 100s linear infinite alternate;
 }
 .sky-near .cloud-4.one {
   top: 10%;
-  -webkit-animation: cloud-4-one 100s linear infinite;
-  -moz-animation: cloud-4-one 100s linear infinite;
-  -o-animation: cloud-4-one 100s linear infinite;
-  -ms-animation: cloud-4-one 100s linear infinite;
-  animation: cloud-4-one 100s linear infinite;
+  -webkit-animation: cloud-4-one 100s linear infinite alternate;
+  -moz-animation: cloud-4-one 100s linear infinite alternate;
+  -o-animation: cloud-4-one 100s linear infinite alternate;
+  -ms-animation: cloud-4-one 100s linear infinite alternate;
+  animation: cloud-4-one 100s linear infinite alternate;
 }
 .sky-near .cloud-4.two {
   top: 15%;
-  -webkit-animation: cloud-4-two 100s linear infinite;
-  -moz-animation: cloud-4-two 100s linear infinite;
-  -o-animation: cloud-4-two 100s linear infinite;
-  -ms-animation: cloud-4-two 100s linear infinite;
-  animation: cloud-4-two 100s linear infinite;
+  -webkit-animation: cloud-4-two 100s linear infinite alternate;
+  -moz-animation: cloud-4-two 100s linear infinite alternate;
+  -o-animation: cloud-4-two 100s linear infinite alternate;
+  -ms-animation: cloud-4-two 100s linear infinite alternate;
+  animation: cloud-4-two 100s linear infinite alternate;
 }
 .title {
   position: fixed;

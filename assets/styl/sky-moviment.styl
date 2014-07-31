@@ -1,14 +1,42 @@
+cloud-animate(name)
+	animation name 100s linear infinite alternate
+.cloud
+	opacity 0.8
 .sky-far
-	.cloud-2
-		opacity 0.8
-		top 14%
-		animation cloud-1 100s linear infinite
-.sky-near
-	.cloud-4
-		opacity 0.8
+	.cloud-1
 		&.one
 			top 10%
-			animation cloud-4-one 100s linear infinite
+			cloud-animate(cloud-1-one)
+		&.two
+			top 2%
+			cloud-animate(cloud-1-two)
+		&.three
+			top 30%
+			cloud-animate(cloud-1-three)
+		&.four
+			top 35%
+			cloud-animate(cloud-1-four)
+		&.five
+			top 40%
+			cloud-animate(cloud-1-five)
+		&.six
+			top 60%
+			cloud-animate(cloud-1-six)
+		&.seven
+			top 70%
+			cloud-animate(cloud-1-four)
+			
+	.cloud-3
+		top 30%
+		cloud-animate(cloud-4-one)
+	.cloud-2
+		top 14%
+		cloud-animate(cloud-4-one)
+.sky-near
+	.cloud-4
+		&.one
+			top 10%
+			cloud-animate(cloud-4-one)
 		&.two
 			top 15%
-			animation cloud-4-two 100s linear infinite
+			cloud-animate(cloud-4-two)
