@@ -53,6 +53,62 @@ strong {
 a {
   word-wrap: break-word;
 }
+.menu {
+  position: fixed;
+  left: -150px;
+  height: 100%;
+  margin: auto;
+  z-index: 9;
+  background: #111;
+}
+.menu a {
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  margin: 20px;
+  border-bottom: 1px solid #333;
+}
+#openmenu {
+  display: none;
+}
+#openmenu:checked ~ .menu {
+  left: 0;
+}
+.menu-btn {
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 160px;
+  top: 10px;
+  z-index: 10;
+  cursor: pointer;
+}
+.menu-btn i {
+  display: block;
+  height: 5px;
+  background: #000;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.menu-btn i:before,
+.menu-btn i:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  background: #000;
+  width: 100%;
+}
+.menu-btn i:before {
+  top: -10px;
+}
+.menu-btn i:after {
+  bottom: -10px;
+}
 @-moz-keyframes cloud-1-one {
   from {
     left: 40%;

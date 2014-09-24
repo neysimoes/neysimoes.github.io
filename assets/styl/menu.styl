@@ -1,0 +1,48 @@
+.menu
+	position fixed
+	left -150px
+	height 100%
+	margin auto
+	z-index 9
+	background #111
+	a
+		text-decoration none
+		color #f1f1f1
+		display block
+		margin 20px
+		border-bottom 1px solid #333
+
+#openmenu
+	display none
+	&:checked ~ .menu
+		left 0
+
+.menu-btn
+	display block
+	height 30px
+	width 30px
+	position absolute
+	left 160px
+	top 10px
+	z-index 10
+	cursor pointer
+	i
+		display block
+		height 5px
+		background black
+		width 100%
+		position absolute
+		top 0
+		bottom 0
+		margin auto
+		&:before, &:after
+			content ""
+			display block
+			position absolute
+			height 5px
+			background black
+			width 100%
+		&:before
+			top -10px
+		&:after
+			bottom -10px
