@@ -78,10 +78,12 @@ a {
   background: none;
 }
 #openmenu:checked ~ .menu .menu-btn:hover i:before {
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 0;
 }
 #openmenu:checked ~ .menu .menu-btn:hover i:after {
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   bottom: 0;
 }
