@@ -74,6 +74,17 @@ a {
 #openmenu:checked ~ .menu {
   left: 0;
 }
+#openmenu:checked ~ .menu .menu-btn:hover i {
+  background: none;
+}
+#openmenu:checked ~ .menu .menu-btn:hover i:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+#openmenu:checked ~ .menu .menu-btn:hover i:after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
 .menu-btn {
   display: block;
   height: 30px;

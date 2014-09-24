@@ -16,6 +16,15 @@
 	display none
 	&:checked ~ .menu
 		left 0
+		.menu-btn:hover
+			i
+				background none
+				&:before
+					transform rotate(45deg)
+					top 0
+				&:after
+					transform rotate(-45deg)
+					bottom 0
 
 .menu-btn
 	display block
