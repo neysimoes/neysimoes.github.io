@@ -22,6 +22,16 @@
 	display none
 	&:checked ~ .menu
 		left 0
+		label:before
+			content ""
+			display block
+			left 0
+			top 0
+			bottom 0
+			right 0
+			margin auto
+			width: 3700%;
+			height: 3700%;
 		.menu-btn
 			i
 				background none
@@ -38,18 +48,19 @@
 
 .menu-btn
 	display block
-	height 30px
-	width 30px
+	height 40px
+	width 40px
 	position absolute
-	left 197px
-	top 10px
+	left 189px
+	top 0px
 	z-index -1
 	cursor pointer
+	padding: 10px;
 	i
 		display block
 		height 5px
 		background black
-		width 100%
+		width 30px
 		position absolute
 		top 0
 		bottom 0
@@ -60,7 +71,7 @@
 			position absolute
 			height 5px
 			background black
-			width 100%
+			width 30px
 		&:before
 			top -10px
 		&:after

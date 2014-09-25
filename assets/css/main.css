@@ -81,6 +81,17 @@ a {
 #openmenu:checked ~ .menu {
   left: 0;
 }
+#openmenu:checked ~ .menu label:before {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 3700%;
+  height: 3700%;
+}
 #openmenu:checked ~ .menu .menu-btn i {
   background: none;
 }
@@ -96,19 +107,20 @@ a {
 }
 .menu-btn {
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   position: absolute;
-  left: 197px;
-  top: 10px;
+  left: 189px;
+  top: 0px;
   z-index: -1;
   cursor: pointer;
+  padding: 10px;
 }
 .menu-btn i {
   display: block;
   height: 5px;
   background: #000;
-  width: 100%;
+  width: 30px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -121,7 +133,7 @@ a {
   position: absolute;
   height: 5px;
   background: #000;
-  width: 100%;
+  width: 30px;
 }
 .menu-btn i:before {
   top: -10px;
