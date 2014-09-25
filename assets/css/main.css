@@ -64,15 +64,14 @@ a {
 }
 .menu a {
   text-decoration: none;
-  color: #f1f1f1;
+  color: #7ddbd7;
   display: block;
   padding: 20px;
   width: 187px;
   border-bottom: 1px solid #333;
 }
 .menu a:hover {
-  background: #fff;
-  opacity: 0.8;
+  background: #7ddbd7;
   color: #000;
 }
 #openmenu {
