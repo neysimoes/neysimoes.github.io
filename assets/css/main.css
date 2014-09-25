@@ -55,18 +55,25 @@ a {
 }
 .menu {
   position: fixed;
-  left: -150px;
+  left: -191px;
   height: 100%;
   margin: auto;
-  z-index: 9;
+  z-index: 10;
   background: #111;
+  border-right: 2px solid #333;
 }
 .menu a {
   text-decoration: none;
   color: #f1f1f1;
   display: block;
-  margin: 20px;
+  padding: 20px;
+  width: 187px;
   border-bottom: 1px solid #333;
+}
+.menu a:hover {
+  background: #fff;
+  opacity: 0.8;
+  color: #000;
 }
 #openmenu {
   display: none;
@@ -74,15 +81,15 @@ a {
 #openmenu:checked ~ .menu {
   left: 0;
 }
-#openmenu:checked ~ .menu .menu-btn:hover i {
+#openmenu:checked ~ .menu .menu-btn i {
   background: none;
 }
-#openmenu:checked ~ .menu .menu-btn:hover i:before {
+#openmenu:checked ~ .menu .menu-btn i:before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 0;
 }
-#openmenu:checked ~ .menu .menu-btn:hover i:after {
+#openmenu:checked ~ .menu .menu-btn i:after {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   bottom: 0;
@@ -92,9 +99,9 @@ a {
   height: 30px;
   width: 30px;
   position: absolute;
-  left: 160px;
+  left: 197px;
   top: 10px;
-  z-index: 10;
+  z-index: -1;
   cursor: pointer;
 }
 .menu-btn i {
