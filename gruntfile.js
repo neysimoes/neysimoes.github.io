@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					protocol: 'http',
-					// port: 8080,
+					port: 9001,
 					keepalive: true,
 					livereload: true
 				}
@@ -19,7 +19,9 @@ module.exports = function(grunt) {
 				options: {
 					paths: ['assets/css/', 'assets/styl/'],
 					compress: false,
-					// banner: '/* VoraxLab 2014 */'
+					use: [
+                        require('jeet')
+                    ]
 				},
 				files: {
 					'assets/css/main.css': ['assets/styl/main.styl']

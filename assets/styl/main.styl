@@ -6,6 +6,40 @@
 @import "city.styl"
 @import "road-moviment.styl"
 @import "sky-moviment.styl"
+@import "jeet"
+
+// main
+// 	position: relative;
+// 	z-index: 300;
+// 	background #fff
+.sobre
+	background #fff
+	position relative
+	z-index 2
+	padding 50px 0
+	center(1200px)
+.about-text
+	column(3/6)
+	h1
+		font-weight 400
+		font-size 3em
+	p
+		font-size 1.2em
+		line-height 1.2
+		margin-top 10px
+.ney-photo
+	column(2/6, offset: 1/6)
+	padding 5px
+	border 1px solid #ccc
+	border-radius 2px
+	box-shadow 2px 2px 2px #00000055
+	transform rotate3d(0, 0, 10, -5deg)
+	position relative
+	right 30px
+	img
+		width 100%
+		height auto
+
 
 .title
 	position fixed
