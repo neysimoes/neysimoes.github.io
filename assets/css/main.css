@@ -48,7 +48,7 @@ table {
   border-spacing: 0;
 }
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 a {
   word-wrap: break-word;
@@ -991,6 +991,16 @@ a {
   -ms-animation: cloud-4-two 100s linear infinite alternate;
   animation: cloud-4-two 100s linear infinite alternate;
 }
+img {
+  width: 100%;
+  height: auto;
+}
+main {
+  background: #fff;
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+}
 .sobre {
   background: #fff;
   position: relative;
@@ -1005,6 +1015,9 @@ a {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+  border-bottom: 1px solid #ccc;
+  height: 100%;
+  min-height: 100%;
 }
 .sobre:before,
 .sobre:after {
@@ -1042,6 +1055,56 @@ a {
   font-size: 1.2em;
   line-height: 1.2;
   margin-top: 10px;
+}
+.jobs {
+  background: #fff;
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  *zoom: 1;
+  width: auto;
+  max-width: 1200px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.jobs:before,
+.jobs:after {
+  content: '';
+  display: table;
+}
+.jobs:after {
+  clear: both;
+}
+.jobs h1 {
+  font-weight: 400;
+  font-size: 3em;
+}
+.jobs dl {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.3333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.jobs dl:before,
+.jobs dl:after {
+  content: '';
+  display: table;
+}
+.jobs dl:after {
+  clear: both;
+}
+.jobs dl:last-child {
+  margin-right: 0%;
+}
+.jobs dt {
+  height: 288px;
 }
 .ney-photo {
   *zoom: 1;
