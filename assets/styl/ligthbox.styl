@@ -1,0 +1,35 @@
+.lightbox-outclick
+	display none
+.lightbox-button
+	display block
+	position absolute
+	top 0
+	right 0
+	bottom 0
+	left 0
+	margin auto
+	background #00000066
+	z-index 1
+	height 100%
+	&:before, &:after
+		content ""
+		display block
+		margin auto
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+	&:before
+		width 50px
+		height 50px
+		border 10px solid #ccc
+		border-radius 50%
+	&:after
+		width 50px
+		height 16px
+		background #ccc
+		border-radius 8px
+		left: -60px;
+		bottom: -60px;
+		transform: rotate3d(0, 0, 10, 135deg);
