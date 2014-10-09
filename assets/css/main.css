@@ -239,6 +239,29 @@ a {
 .menu-btn i:after {
   bottom: -10px;
 }
+.lightbox input:checked + dl .lightbox-button {
+  position: fixed;
+  width: 200%;
+}
+.lightbox input:checked + dl .lightbox-button:after,
+.lightbox input:checked + dl .lightbox-button:before {
+  display: none;
+}
+.lightbox input:checked + dl dt {
+  overflow: visible;
+  position: static;
+}
+.lightbox input:checked + dl img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 70%;
+  height: auto;
+  z-index: 9999;
+}
 .lightbox-outclick {
   display: none;
 }
@@ -1166,11 +1189,6 @@ a {
   animation: right-road 20s linear 3s infinite;
 }
 .brown-van {
-  -webkit-transform: translate(-7rem, -25px);
-  -moz-transform: translate(-7rem, -25px);
-  -o-transform: translate(-7rem, -25px);
-  -ms-transform: translate(-7rem, -25px);
-  transform: translate(-7rem, -25px);
   -webkit-animation: right-road 20s linear 8s infinite;
   -moz-animation: right-road 20s linear 8s infinite;
   -o-animation: right-road 20s linear 8s infinite;
@@ -1333,7 +1351,6 @@ a {
 }
 .sobre {
   background: #fff;
-  position: relative;
   z-index: 2;
   padding: 50px 0;
   border-bottom: 1px solid #ccc;
@@ -1370,17 +1387,19 @@ a {
 }
 .jobs {
   background: #fff;
-  position: relative;
   height: 100%;
   min-height: 100%;
+  padding: 50px 0;
 }
 .jobs h1 {
   font-weight: 400;
   font-size: 3em;
+  margin-bottom: 20px;
 }
 .jobs dt {
-  height: 288px;
+  height: 200px;
   position: relative;
+  overflow: hidden;
 }
 .jobs input {
   display: none;

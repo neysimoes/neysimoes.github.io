@@ -1,3 +1,27 @@
+.lightbox
+	input:checked + dl
+		.lightbox-button
+			position fixed
+			width 200%
+			&:after, &:before {
+				display none
+			}
+		dt
+			overflow visible
+			position static
+		img
+			position fixed
+			top 0
+			right 0
+			bottom 0
+			left 0
+			margin auto
+			width 70%
+			height auto
+			z-index 9999;
+
+			
+
 .lightbox-outclick
 	display none
 .lightbox-button
