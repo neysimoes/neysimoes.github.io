@@ -112,7 +112,8 @@ a {
 .ney-photo:last-child {
   margin-right: 0%;
 }
-.jobs article {
+.jobs article,
+.youtube article {
   *zoom: 1;
   width: auto;
   max-width: 1200px;
@@ -124,14 +125,18 @@ a {
   padding-right: 0;
 }
 .jobs article:before,
-.jobs article:after {
+.youtube article:before,
+.jobs article:after,
+.youtube article:after {
   content: '';
   display: table;
 }
-.jobs article:after {
+.jobs article:after,
+.youtube article:after {
   clear: both;
 }
-.jobs dl {
+.jobs dl,
+.youtube dl {
   *zoom: 1;
   float: left;
   clear: none;
@@ -141,14 +146,18 @@ a {
   margin-right: 3%;
 }
 .jobs dl:before,
-.jobs dl:after {
+.youtube dl:before,
+.jobs dl:after,
+.youtube dl:after {
   content: '';
   display: table;
 }
-.jobs dl:after {
+.jobs dl:after,
+.youtube dl:after {
   clear: both;
 }
-.jobs dl:last-child {
+.jobs dl:last-child,
+.youtube dl:last-child {
   margin-right: 0%;
 }
 .menu {
@@ -1358,7 +1367,7 @@ a {
   min-height: 100%;
 }
 .about-text {
-  color: #fff;
+  color: #dfdfdf;
 }
 .about-text h1 {
   font-weight: 400;
@@ -1371,7 +1380,7 @@ a {
   margin-top: 10px;
 }
 .ney-photo {
-  background: #fff;
+  background: #dfdfdf;
   padding: 5px;
   border: 1px solid #ccc;
   -webkit-border-radius: 2px;
@@ -1390,15 +1399,14 @@ a {
   height: auto;
 }
 .jobs {
-  background: #7ddbd7;
+  background: #deb146;
   padding: 50px 0;
-  color: #fff;
+  color: #4b3f34;
 }
 .jobs h1 {
   font-weight: 400;
   font-size: 3em;
   margin-bottom: 40px;
-  color: #0a0783;
 }
 .jobs dt {
   height: 200px;
@@ -1409,11 +1417,34 @@ a {
 .jobs input {
   display: none;
 }
-.jobs strong {
-  color: #0a0783;
-}
 .jobs h3,
 .jobs p {
+  font-family: "lato";
+  margin-top: 5px;
+}
+.youtube {
+  background: #ebf8f7;
+  padding: 50px 0;
+  color: #000;
+}
+.youtube h1 {
+  font-weight: 400;
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+.youtube dt {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.youtube iframe {
+  min-width: 100%;
+  width: 100%;
+  min-height: 212px;
+  height: auto;
+}
+.youtube dd {
   font-family: "lato";
   margin-top: 5px;
 }
