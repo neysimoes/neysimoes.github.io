@@ -1634,6 +1634,9 @@ footer li {
   font-size: 1.5em;
   line-height: 1.3em;
 }
+footer li span {
+  color: #777;
+}
 footer a {
   color: #fff;
   text-decoration: none;
