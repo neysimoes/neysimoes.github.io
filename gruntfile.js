@@ -20,7 +20,8 @@ module.exports = function(grunt) {
 					paths: ['assets/css/', 'assets/styl/'],
 					compress: false,
 					use: [
-                        require('jeet')
+                        require('jeet'),
+                        require('rupture')
                     ]
 				},
 				files: {

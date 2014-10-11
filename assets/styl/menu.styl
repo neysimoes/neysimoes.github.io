@@ -6,13 +6,18 @@
 	z-index 10
 	background #111
 	border-right 2px solid #333
+	width 187px
+	+below(600px)
+			width 80%
+			left -80%
 	a
+		font-size 1.2em
 		text-decoration none
 		color #7ddbd7
 		display block
 		padding 20px
-		width 187px
-		border-bottom 1px solid #333
+		
+		border-bottom 1px solid #333		
 		&:hover
 			background #7ddbd7
 			color #000
@@ -21,7 +26,6 @@
 	display none
 	&:checked ~ .menu
 		left 0
-		animation-name bounceInLeft
 		label:before
 			content ""
 			display block
@@ -51,7 +55,7 @@
 	height 40px
 	width 40px
 	position absolute
-	left 189px
+	left: 101%;
 	top 0px
 	z-index -1
 	cursor pointer

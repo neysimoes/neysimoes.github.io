@@ -21,6 +21,7 @@
 @import "youtube.styl"
 @import "footer.styl"
 
+
 img
 	width 100%
 	height auto
@@ -48,12 +49,18 @@ main
 		font-weight 900
 		color: rgba(255,255,255, 0.8);
 		text-shadow: 1px 4px 0px #67A, 1px 2px 0px #953
+		+below(600px)
+			line-height 1.2
+			font-size 4em
 		
 	h2
 		color: #fff
 		font-size 1.7em
 		font-weight 600
 		text-shadow: 2px 2px 0px #999
+		+below(600px)
+			padding 0 20px
+			line-height 1.2
 
 .sky-far, .sky-near
 	position absolute

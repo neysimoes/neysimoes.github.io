@@ -2,15 +2,26 @@
 	background: #fff;
 	padding: 50px 0;
 	color: #000;
+	dl
+		+below(600px)
+			padding-top 50px
+			&:first-child
+				padding-top 0
 	h1
 		font-weight 400
 		font-size 3em
 		margin-bottom 40px
+		+below(600px)
+			margin-bottom 20px
+			text-align center
 	dt
 		height: 200px;
 		position: relative;
 		overflow: hidden;
 		margin-bottom 30px
+		+below(600px)
+			height auto
+			border 1px solid #ccc
 	input
 		display none
 	h3, p

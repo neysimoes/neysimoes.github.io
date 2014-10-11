@@ -56,7 +56,7 @@ a {
 .sobre article {
   *zoom: 1;
   width: auto;
-  max-width: 1200px;
+  max-width: 95%;
   float: none;
   display: block;
   margin-right: auto;
@@ -72,7 +72,7 @@ a {
 .sobre article:after {
   clear: both;
 }
-.about-text {
+.sobre .about-text {
   *zoom: 1;
   float: left;
   clear: none;
@@ -80,43 +80,90 @@ a {
   width: 61.375%;
   margin-left: 0%;
   margin-right: 3%;
+  position: relative;
+  left: -25.75%;
 }
-.about-text:before,
-.about-text:after {
+.sobre .about-text:before,
+.sobre .about-text:after {
   content: '';
   display: table;
 }
-.about-text:after {
+.sobre .about-text:after {
   clear: both;
 }
-.about-text:last-child {
+.sobre .about-text:last-child {
   margin-right: 0%;
 }
-.ney-photo {
+@media only screen and (max-width: 600px) {
+  .sobre .about-text {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    left: 0;
+    padding-top: 30px;
+  }
+  .sobre .about-text:first-child {
+    margin-left: auto;
+  }
+  .sobre .about-text:last-child {
+    margin-right: auto;
+  }
+}
+.sobre .ney-photo {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 23.875%;
+  width: 25%;
   margin-left: 0%;
-  margin-right: 1.5%;
+  margin-right: 0%;
+  position: relative;
+  left: 64.375%;
 }
-.ney-photo:before,
-.ney-photo:after {
+.sobre .ney-photo:before,
+.sobre .ney-photo:after {
   content: '';
   display: table;
 }
-.ney-photo:after {
+.sobre .ney-photo:after {
   clear: both;
 }
-.ney-photo:last-child {
+.sobre .ney-photo:last-child {
   margin-right: 0%;
+}
+@media only screen and (max-width: 600px) {
+  .sobre .ney-photo {
+    *zoom: 1;
+    width: auto;
+    max-width: 90%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 5px;
+    position: static;
+    left: 0;
+  }
+  .sobre .ney-photo:before,
+  .sobre .ney-photo:after {
+    content: '';
+    display: table;
+  }
+  .sobre .ney-photo:after {
+    clear: both;
+  }
 }
 .jobs article,
 .youtube article {
   *zoom: 1;
   width: auto;
-  max-width: 1200px;
+  max-width: 95%;
   float: none;
   display: block;
   margin-right: auto;
@@ -160,6 +207,84 @@ a {
 .youtube dl:last-child {
   margin-right: 0%;
 }
+@media only screen and (max-width: 600px) {
+  .jobs dl,
+  .youtube dl {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    left: 0;
+  }
+  .jobs dl:first-child,
+  .youtube dl:first-child {
+    margin-left: auto;
+  }
+  .jobs dl:last-child,
+  .youtube dl:last-child {
+    margin-right: auto;
+  }
+}
+footer .container {
+  *zoom: 1;
+  width: auto;
+  max-width: 95%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+footer .container:before,
+footer .container:after {
+  content: '';
+  display: table;
+}
+footer .container:after {
+  clear: both;
+}
+footer .column {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+footer .column:before,
+footer .column:after {
+  content: '';
+  display: table;
+}
+footer .column:after {
+  clear: both;
+}
+footer .column:last-child {
+  margin-right: 0%;
+}
+@media only screen and (max-width: 600px) {
+  footer .column {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    left: 0;
+  }
+  footer .column:first-child {
+    margin-left: auto;
+  }
+  footer .column:last-child {
+    margin-right: auto;
+  }
+}
 .menu {
   position: fixed;
   left: -191px;
@@ -168,13 +293,20 @@ a {
   z-index: 10;
   background: #111;
   border-right: 2px solid #333;
+  width: 187px;
+}
+@media only screen and (max-width: 600px) {
+  .menu {
+    width: 80%;
+    left: -80%;
+  }
 }
 .menu a {
+  font-size: 1.2em;
   text-decoration: none;
   color: #7ddbd7;
   display: block;
   padding: 20px;
-  width: 187px;
   border-bottom: 1px solid #333;
 }
 .menu a:hover {
@@ -186,7 +318,6 @@ a {
 }
 #openmenu:checked ~ .menu {
   left: 0;
-  animation-name: bounceInLeft;
 }
 #openmenu:checked ~ .menu label:before {
   content: "";
@@ -217,7 +348,7 @@ a {
   height: 40px;
   width: 40px;
   position: absolute;
-  left: 189px;
+  left: 101%;
   top: 0px;
   z-index: -1;
   cursor: pointer;
@@ -289,6 +420,11 @@ a {
   opacity: 0;
   transition: opacity 0.5s;
   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .lightbox-button {
+    display: none;
+  }
 }
 .lightbox-button:hover {
   opacity: 1;
@@ -1331,6 +1467,7 @@ a {
   min-height: 100%;
   overflow: hidden;
   background: #baf4f2;
+  z-index: 1;
 }
 .sunburst {
   z-index: 0;
@@ -1382,11 +1519,12 @@ a {
   font-family: "lato";
   font-size: 1.2em;
   line-height: 1.4;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .ney-photo {
   background: #dfdfdf;
   padding: 5px;
+  left: 60px;
   border: 1px solid #ccc;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -1399,6 +1537,11 @@ a {
   transform: rotate3d(0, 0, 10, -5deg);
   position: relative;
 }
+@media only screen and (max-width: 400px) {
+  .ney-photo {
+    left: -10px;
+  }
+}
 .ney-photo img {
   width: 100%;
   height: auto;
@@ -1408,16 +1551,36 @@ a {
   padding: 50px 0;
   color: #000;
 }
+@media only screen and (max-width: 600px) {
+  .jobs dl {
+    padding-top: 50px;
+  }
+  .jobs dl:first-child {
+    padding-top: 0;
+  }
+}
 .jobs h1 {
   font-weight: 400;
   font-size: 3em;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .jobs h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 .jobs dt {
   height: 200px;
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .jobs dt {
+    height: auto;
+    border: 1px solid #ccc;
+  }
 }
 .jobs input {
   display: none;
@@ -1437,6 +1600,11 @@ a {
   font-size: 3em;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 600px) {
+  .youtube h1 {
+    text-align: center;
+  }
+}
 .youtube dt {
   height: 212px;
   position: relative;
@@ -1451,18 +1619,38 @@ a {
 }
 .youtube dd {
   font-family: "lato";
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 footer {
-  height: 100px;
+  height: 250px;
   background: #333;
   width: 100%;
   color: #fff;
   overflow: hidden;
 }
-footer .container {
+footer .fixed {
   position: fixed;
   bottom: 0;
+  width: 100%;
+}
+footer .container {
+  padding: 30px 0 50px;
+}
+footer h3 {
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+footer li {
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 img {
   width: 100%;
@@ -1491,11 +1679,23 @@ main {
   color: rgba(255,255,255,0.8);
   text-shadow: 1px 4px 0px #67a, 1px 2px 0px #953;
 }
+@media only screen and (max-width: 600px) {
+  .title h1 {
+    line-height: 1.2;
+    font-size: 4em;
+  }
+}
 .title h2 {
   color: #fff;
   font-size: 1.7em;
   font-weight: 600;
   text-shadow: 2px 2px 0px #999;
+}
+@media only screen and (max-width: 600px) {
+  .title h2 {
+    padding: 0 20px;
+    line-height: 1.2;
+  }
 }
 .sky-far,
 .sky-near {
