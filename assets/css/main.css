@@ -251,6 +251,7 @@ a {
 .lightbox input:checked + dl .lightbox-button {
   position: fixed;
   width: 200%;
+  opacity: 1;
 }
 .lightbox input:checked + dl .lightbox-button:after,
 .lightbox input:checked + dl .lightbox-button:before {
@@ -285,6 +286,12 @@ a {
   background: rgba(0,0,0,0.4);
   z-index: 1;
   height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+.lightbox-button:hover {
+  opacity: 1;
 }
 .lightbox-button:before,
 .lightbox-button:after {
@@ -1362,8 +1369,6 @@ a {
   background: #333;
   z-index: 2;
   padding: 50px 0;
-  border-bottom: 1px solid #ccc;
-  height: 100%;
   min-height: 100%;
 }
 .about-text {
@@ -1433,7 +1438,7 @@ a {
   margin-bottom: 40px;
 }
 .youtube dt {
-  height: 200px;
+  height: 212px;
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
@@ -1448,6 +1453,15 @@ a {
   font-family: "lato";
   margin-top: 5px;
 }
+footer {
+  height: 100px;
+  background: #6f979b;
+  width: 100%;
+}
+footer .container {
+  position: fixed;
+  bottom: 0;
+}
 img {
   width: 100%;
   height: auto;
@@ -1455,8 +1469,8 @@ img {
 main {
   background: #fff;
   position: relative;
-  height: 100%;
   min-height: 100%;
+  z-index: 1;
 }
 .title {
   position: fixed;

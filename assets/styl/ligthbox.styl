@@ -3,6 +3,7 @@
 		.lightbox-button
 			position fixed
 			width 200%
+			opacity 1
 			&:after, &:before {
 				display none
 			}
@@ -35,6 +36,12 @@
 	background #00000066
 	z-index 1
 	height 100%
+	opacity 0
+	transition: opacity 0.5s
+	cursor pointer
+	&:hover {
+		opacity 1
+	}
 	&:before, &:after
 		content ""
 		display block
