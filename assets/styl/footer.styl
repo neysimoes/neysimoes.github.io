@@ -1,19 +1,18 @@
 footer
-	height 250px
 	background #333
 	width 100%
 	color #fff
-	overflow hidden
-	.fixed
-		position fixed
-		bottom 0
-		width 100%
 	.container
 		padding 30px 0 50px
+	+below(600px)
+		.column:last-child
+			margin-top: 30px
 	h3
 		font-weight 400
 		font-size 2em
 		margin-bottom 20px
+		+below(600px)
+			text-align center
 	li
 		font-size 1.5em
 		line-height 1.3em
