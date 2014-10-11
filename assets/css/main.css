@@ -1366,13 +1366,13 @@ a {
   background: #888;
 }
 .sobre {
-  background: #333;
+  background: #deb146;
   z-index: 2;
   padding: 50px 0;
   min-height: 100%;
 }
 .about-text {
-  color: #dfdfdf;
+  color: #4b3f34;
 }
 .about-text h1 {
   font-weight: 400;
@@ -1404,9 +1404,9 @@ a {
   height: auto;
 }
 .jobs {
-  background: #deb146;
+  background: #fff;
   padding: 50px 0;
-  color: #4b3f34;
+  color: #000;
 }
 .jobs h1 {
   font-weight: 400;
@@ -1428,9 +1428,9 @@ a {
   margin-top: 5px;
 }
 .youtube {
-  background: #ebf8f7;
+  background: #48cfad;
   padding: 50px 0;
-  color: #000;
+  color: #f0f0f0;
 }
 .youtube h1 {
   font-weight: 400;
@@ -1455,8 +1455,10 @@ a {
 }
 footer {
   height: 100px;
-  background: #6f979b;
+  background: #333;
   width: 100%;
+  color: #fff;
+  overflow: hidden;
 }
 footer .container {
   position: fixed;
